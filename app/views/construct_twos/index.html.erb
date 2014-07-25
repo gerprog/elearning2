@@ -1,0 +1,182 @@
+<!--<h1>Listing construct_twos</h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Description</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @construct_twos.each do |construct_two| %>
+  <tr>
+    <td><%= construct_two.title %></td>
+    <td><%= construct_two.description %></td>
+    <td><%= link_to 'Show', construct_two %></td>
+    <td><%= link_to 'Edit', edit_construct_two_path(construct_two) %></td>
+    <td><%= link_to 'Destroy', construct_two, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Construct two', new_construct_two_path %>-->
+
+<div id="quiz_container" class="container">
+
+ <div class="row-fluid">
+
+          <div class="span2"></div>
+          <ul class="nav nav-tabs" role="tablist">
+            <li class="font_nav_bar_subj"><a href="#">Space</a></li>
+            <li class="active font_nav_bar_subj"><a href="#">Geography</a></li>
+            <li class="font_nav_bar_subj"><a href="#">Biology</a></li>
+            <li class="font_nav_bar_subj"><a href="#">Grammer</a></li>
+            <li class="font_nav_bar_subj"><a href="#">Chemistry</a></li>
+            <li class="font_nav_bar_subj"><a href="#">Physics</a></li>
+          </ul>
+
+          <div class="span12" style="margin-top:50px;">
+
+            <!--<ul class="number_list">
+               <li class="Arial_Rd_Grey_50 margin_number"> 1.</li>
+               <li class="Arial_Rd_Grey_50 margin_number"> 2.</li>
+               <li class="Arial_Rd_Grey_50 margin_number"> 3.</li>
+               <li class="Arial_Rd_Grey_50 margin_number"> 4.</li>
+               <li class="Arial_Rd_Grey_50 margin_number"> 5.</li>
+               <li class="Arial_Rd_Grey_50 margin_number"> 6.</li>
+               <li class="Arial_Rd_Grey_50 margin_number"> 7.</li>
+               <li class="Arial_Rd_Grey_50 margin_number"> 8.</li>
+               <li class="Arial_Rd_Grey_50 margin_number"> 9.</li>
+               <li class="Arial_Rd_Grey_50 margin_number"> 10.</li>
+               <li class="Arial_Rd_Grey_50 margin_number"> 11.</li>
+               <li class="Arial_Rd_Grey_50 margin_number"> 12.</li>
+               <li class="Arial_Rd_Grey_50 margin_number"> 13.</li>
+
+            </ul>-->
+
+            <div id="number_rows"> 
+              <div id="number_row1">
+                <div id="row1a" class="row1a row_no_border_150"></div>
+                <div id="row1b" class="row1b row_no_border_280"></div>
+              </div>
+              <div id="number_row2">
+                <div id="row2a" class="row2a row_no_border_150"></div>
+                <div id="row2b" class="row2b row_no_border_280"></div>
+              </div>
+              <div id="number_row3">
+                <div id="row3a" class="row3a row_no_border_150"></div>
+                <div id="row3b" class="row3b row_no_border_280"></div>
+              </div>
+               <div id="number_row4"> 
+                <div id="row4a" class="row4a row_no_border_150"></div>
+                <div id="row4b" class="row4b row_no_border_280"></div>
+              </div>
+              <div id="number_row5">
+                <div id="row5a" class="row5a row_no_border_150"></div>
+                <div id="row5b" class="row5b row_no_border_280"></div>
+              </div>
+              <div id="number_row6">
+                <div id="row6a" class="row6a row_no_border_150"></div>
+                <div id="row6b" class="row6b row_no_border_280"></div>
+              </div>
+              <div id="number_row7">
+                <div id="row7a" class="row7a row_no_border_150"></div>
+                <div id="row7b" class="row7b row_no_border_280"></div>
+              </div>
+              <div id="number_row8">
+                <div id="row8a" class="row8a row_no_border_150"></div>
+                <div id="row8b" class="row8b row_no_border_280"></div>
+              </div>
+              <div id="number_row9">
+                <div id="row9a" class="row9a row_no_border_150"></div>
+                <div id="row9b" class="row9b row_no_border_280"></div>
+              </div>
+              <div id="number_row10">
+                <div id="row10a" class="row10a row_no_border_150"></div>
+                <div id="row10b" class="row10b row_no_border_280"></div>
+              </div>
+              <div id="number_row11">
+                <div id="row11a" class="row11a row_no_border_150"></div>
+                <div id="row11b" class="row11b row_no_border_280"></div>
+              </div>
+              <div id="number_row12">
+                <div id="row12a" class="row12a row_no_border_150"></div>
+                <div id="row12b" class="row12b row_no_border_280"></div>
+              </div>
+              <!--<div id="number_row13">
+                <div id="row13a" class="row13a row_no_border_150"></div>
+                <div id="row13b" class="row13b row_no_border_280"></div>
+              </div>-->
+
+            </div>
+
+            <div>
+              <%= image_tag("285million.png") %>
+            </div>
+            <div id="info">
+
+              <p class="Arial_Rd_Grey_30" style="line-height:150%;">Place the cities in order of population and match the facts</p>
+            </div>
+
+            <div id="cities_info">
+              <div class="cities_info_row">
+                <div id="drag_city1" class="tokyo"> <%= image_tag("tokyo.png") %></div> 
+                <div id="drag_city2" class="canton"> <%= image_tag("canton.png") %></div> 
+                <div id="drag_city3" class="shanghai"> <%= image_tag("shanghai.png") %></div>
+              </div>
+              <div class="cities_info_row">
+                <div id="drag_city4" class="jakarta"> <%= image_tag("jakarta.png") %></div> 
+                <div id="drag_city5" class="seoul"> <%= image_tag("seoul.png") %></div> 
+                <div id="drag_city6" class="delhi"> <%= image_tag("delhi.png") %></div> 
+              </div>
+              <div class="cities_info_row">
+                <div id="drag_city7" class="mumbai"> <%= image_tag("mumbai.png") %></div> 
+                <div id="drag_city8" class="newyork"> <%= image_tag("newyork.png") %></div> 
+                <div id="drag_city9" class="beijing"> <%= image_tag("beijing.png") %></div> 
+              </div>
+              <div class="cities_info_row">
+                <div id="drag_city10" class="losangeles"> <%= image_tag("losangeles.png") %></div> 
+                <div id="drag_city11" class="buenosaires"> <%= image_tag("buenosaires.png") %></div> 
+                <div id="drag_city12" class="london"> <%= image_tag("london.png") %></div> 
+              </div>
+              <!--<div class="cities_info_row">
+                <div id="drag_city13" class="istanbul"> <%= image_tag("istanbul.png") %></div> 
+              </div>-->
+              <div class="cities_info_row">
+                <div id="drag_fact1" class="tokyo_fact margin-left_20"> <%= image_tag("tokyo_fact.png") %></div> 
+                <div id="drag_fact2" class="canton_fact margin-left_20"> <%= image_tag("canton_fact.png") %></div> 
+                <div id="drag_fact3" class="shanghai_fact margin-left_20"> <%= image_tag("shanghai_fact.png") %></div> 
+              </div>
+               <div class="cities_info_row">
+                <div id="drag_fact4" class="jakarta_fact margin-left_20"> <%= image_tag("jakarta_fact.png") %></div> 
+                <div id="drag_fact5" class="seoul_fact margin-left_20"> <%= image_tag("seoul_fact.png") %></div> 
+                <div id="drag_fact6" class="delhi_fact margin-left_20"> <%= image_tag("delhi_fact.png") %></div> 
+              </div>
+               <div class="cities_info_row">
+                <div id="drag_fact7" class="mumbai_fact margin-left_20"> <%= image_tag("mumbai_fact.png") %></div> 
+                <div id="drag_fact8" class="newyork_fact margin-left_20"> <%= image_tag("newyork_fact.png") %></div> 
+                <div id="drag_fact9" class="beijing_fact margin-left_20"> <%= image_tag("beijing_fact.png") %></div> 
+              </div>
+               <div class="cities_info_row">
+                <div id="drag_fact10" class="losangeles_fact margin-left_20"> <%= image_tag("losangeles_fact.png") %></div> 
+                <div id="drag_fact11" class="buenosaires_fact margin-left_20"> <%= image_tag("buenosaires_fact.png") %></div> 
+                <div id="drag_fact12" class="london_fact margin-left_20"> <%= image_tag("london_fact.png") %></div> 
+              </div>
+              <!--<div class="cities_info_row">
+                <div id="drag_fact10" class="istanbul_fact"> <%= image_tag("istanbul_fact.png") %></div> 
+              </div>-->
+            </div>
+
+
+
+
+
+
+
+          </div> <!-- span12 -->
+
+</div> <!-- row-fluid -->
+</div> <!-- container -->

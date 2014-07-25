@@ -1,0 +1,128 @@
+#number_rows {
+	width: 470px;
+	height: 1420px;
+	float: left;
+	position:relative;
+	background-image: url(number_rows.png);
+}
+
+#number_row1, #number_row2, #number_row3, #number_row4, #number_row5, #number_row6, 
+#number_row7, #number_row8, #number_row9, #number_row10, #number_row11, #number_row12, #number_row13 {
+	width: 500px;
+	height: 100px;
+	float: left;
+	margin-bottom: 15px;
+	position: relative;
+	z-index: 100;
+}
+
+.number_row {
+	width: 70px;
+	height: 100px;
+	font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
+  	font-size: 50px;
+  	text-align: right;
+}
+
+.bottom {
+    position: absolute;
+    bottom:0;
+    right: 0;
+}
+
+.row_no_border_150{
+  width: 0px;
+  height: 100px; 
+  padding-right: 100px;
+  float: left;
+}
+
+.row_no_border_280{
+  width: 280px;
+  height: 100px; 
+  float: left;
+}
+
+#cities_info {
+	width: 610px;
+	height: 920px;
+	background-color: #E0E0E0;
+	border: 4px dashed #B8B8B8;
+	border-radius: 25px;
+	float: left;
+	margin-left: 30px;
+	/*margin-top: 70px;
+	position: fixed;*/
+}
+.cities_info_row {
+	float: left;
+}
+
+#info {
+	width: 600px;
+	height: 100px;
+	float: left;
+	margin-left: 30px;
+}
+
+#drag_city1, #drag_city2, #drag_city3, #drag_city4, #drag_city5, #drag_city6, #drag_city7, 
+#drag_city8, #drag_city9, #drag_city10, #drag_city11, #drag_city12, #drag_city13, {
+  width: 150px;
+  height: 100px;
+  float: left;
+}
+
+#drag_fact1, #drag_fact2, #drag_fact3, #drag_fact4, #drag_fact5, #drag_fact6, #drag_fact7, 
+#drag_fact8, #drag_fact9, #drag_fact10, #drag_fact11, #drag_fact12, #drag_fact13,  {
+  width: 280px;
+  height: 100px;
+  float: left;
+}
+
+#row1a, #row2a, #row3a, #row4a, #row5a, #row6a, #row7a, #row8a, #row9a, #row10a, #row11a, #row12a, #row13a{
+  width: 0px;
+  height: 100px;
+  float: left;
+  padding-left: 150px;
+  margin-bottom: 20px;
+  position:relative;
+  left:0px;
+  top:0px;
+  z-index:2;
+}
+
+#row1b, #row2b, #row3b, #row4b, #row5b, #row6b, #row7b, #row8b, #row9b, #row10b, #row11b, #row12b, #row13b{
+  width: 200px;
+  height: 100px;
+  float: left;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  position:relative;
+  left:0px;
+  top:0px;
+  z-index:2;
+}
+
+.margin-left_20{
+	margin-left: 20px;
+}
+
+/*.row1a{
+	width: 150px;
+  height: 100px;
+}*/
+
+.number_list{
+  width: 70px;
+  height: 1000px;
+  float: left;
+}
+
+.margin_number{
+	margin-top: 40px;
+	margin-bottom: 78px;
+	margin-left: 0px;
+}
+
+
+

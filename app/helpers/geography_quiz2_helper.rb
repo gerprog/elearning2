@@ -1,0 +1,2 @@
+module GeographyQuiz2Helper
+end

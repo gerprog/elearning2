@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Elearning</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+
+<body>
+
+	<!--<ul class="nav nav-tabs" role="tablist">
+  <li class="active"><a href="#">Home</a></li>
+  <li><a href="#">Profile</a></li>
+  <li><a href="#">Messages</a></li>
+</ul>-->
+
+<div class="container">
+  
+<div class="row-fluid emphasize-dark">
+   <div class="span12">
+      <div class="span3"></div>
+        <div class="span6"><%= image_tag("title.png") %></div>
+      <div class="span3"></div>
+   </div><!-- span12-->
+</div><!-- row-fluid emphasize-dark-->
+
+<div class="container main_background">
+ <div class="row-fluid">
+
+      <div class="span12 navbar background_lgt_grey">
+		 <div class="span4"></div>
+       
+     		 <div id="navbar">
+            	<nav class="navbar-header"> 
+                 <ul class="nav" style="padding-top:20px;">
+                      <li class="font_nav_bar_quiz"><%= link_to "Quiz1", :controller => "questions",  :action => "index" %></li>
+                      <li class="font_nav_bar_quiz"><%= link_to "Quiz2", :controller => "construct_ones",  :action => "index" %></li>
+                      <li class="font_nav_bar_quiz"><%= link_to "Quiz3", :controller => "construct_twos",  :action => "index" %></li>
+                      <li class="font_nav_bar_quiz"><%= link_to "Quiz4", :controller => "quiz3",  :action => "biology_3" %></li>
+                      <li class="font_nav_bar_quiz"><%= link_to "Quiz5", :controller => "questions",  :action => "index" %></li>
+                 </ul>
+            	</nav><!--navbar-header -->
+      		 </div> <!--navbar-->
+
+ </div><!--span12 navbar -->
+
+	<%= yield %>
+
+
+
+</div> <!-- row-fluid -->
+</div> <!-- container main_background -->
+
+
+
+</div> <!-- container -->
+
+</body>
+</html>

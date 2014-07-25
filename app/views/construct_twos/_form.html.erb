@@ -1,0 +1,25 @@
+<%= form_for(@construct_two) do |f| %>
+  <% if @construct_two.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@construct_two.errors.count, "error") %> prohibited this construct_two from being saved:</h2>
+
+      <ul>
+      <% @construct_two.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br />
+    <%= f.text_area :description %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
